@@ -6,6 +6,9 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
   <title>Restaurant Reviews</title>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
+
 </head>
 
 <body>
@@ -36,6 +39,15 @@
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
   <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script> -->
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWljaGVsbGU2NDgiLCJhIjoiY2pscW1oemFnMmhlbDNxb3M5emR5d2F0aSJ9.jhRJBGpoHCUMMkBo2En7ig';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v10'
+    });
+    </script>
+
 
 
   <footer id="footer">
